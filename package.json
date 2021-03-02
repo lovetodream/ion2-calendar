@@ -5,6 +5,7 @@
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "cd ./dev && npm start",
     "clean:dist": "rm -rf dist",
     "demo:link": "npm link && cd ./demo && npm link ion2-calendar",
@@ -70,5 +71,8 @@
         "moment": "moment"
       }
     }
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   }
 }
